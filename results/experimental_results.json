@@ -1,0 +1,112 @@
+{
+  "timestamp": "2025-12-07",
+  "datasets": {
+    "tinystories": {
+      "num_samples": 1000,
+      "total_stories_corpus": 10000
+    },
+    "wikitext103": {
+      "num_samples": 321
+    }
+  },
+  "vocabulary_sizes": {
+    "Artificial": 874,
+    "BPE-1K": 1000,
+    "BPE-5K": 5000,
+    "Unigram-1K": 1000,
+    "Byte": 256
+  },
+  "results_tinystories": {
+    "Artificial": {
+      "total_bytes": 943426,
+      "total_tokens": 491928,
+      "total_words": 183801,
+      "tokens_per_byte": 0.5214272237568183,
+      "tokens_per_word": 2.6764163415868247,
+      "bytes_per_token": 1.9178131759119221
+    },
+    "BPE-1K": {
+      "total_bytes": 943426,
+      "total_tokens": 276957,
+      "total_words": 183801,
+      "tokens_per_byte": 0.29356515508370556,
+      "tokens_per_word": 1.5068307571775996,
+      "bytes_per_token": 3.4063988272547725
+    },
+    "BPE-5K": {
+      "total_bytes": 943426,
+      "total_tokens": 225631,
+      "total_words": 183801,
+      "tokens_per_byte": 0.2391613120689911,
+      "tokens_per_word": 1.2275830925838271,
+      "bytes_per_token": 4.181278281796384
+    },
+    "Unigram-1K": {
+      "total_bytes": 943426,
+      "total_tokens": 332687,
+      "total_words": 183801,
+      "tokens_per_byte": 0.3526370907734152,
+      "tokens_per_word": 1.8100391183943505,
+      "bytes_per_token": 2.8357765707707245
+    },
+    "Byte": {
+      "total_bytes": 943426,
+      "total_tokens": 943426,
+      "total_words": 183801,
+      "tokens_per_byte": 1.0,
+      "tokens_per_word": 5.132866524121196,
+      "bytes_per_token": 1.0
+    }
+  },
+  "results_wikitext": {
+    "Artificial": {
+      "total_bytes": 165717,
+      "total_tokens": 131427,
+      "total_words": 32136,
+      "tokens_per_byte": 0.7930809753978167,
+      "tokens_per_word": 4.089712471994026,
+      "bytes_per_token": 1.2609052934328562
+    },
+    "BPE-1K": {
+      "total_bytes": 165717,
+      "total_tokens": 66644,
+      "total_words": 32136,
+      "tokens_per_byte": 0.40215548193607176,
+      "tokens_per_word": 2.073811301966642,
+      "bytes_per_token": 2.4866004441510112
+    },
+    "BPE-5K": {
+      "total_bytes": 165717,
+      "total_tokens": 52504,
+      "total_words": 32136,
+      "tokens_per_byte": 0.3168292933132992,
+      "tokens_per_word": 1.6338063231267115,
+      "bytes_per_token": 3.156273807709889
+    },
+    "Unigram-1K": {
+      "total_bytes": 165717,
+      "total_tokens": 92219,
+      "total_words": 32136,
+      "tokens_per_byte": 0.5564848506791699,
+      "tokens_per_word": 2.8696477470749318,
+      "bytes_per_token": 1.796994111842462
+    },
+    "Byte": {
+      "total_bytes": 165717,
+      "total_tokens": 165717,
+      "total_words": 32136,
+      "tokens_per_byte": 1.0,
+      "tokens_per_word": 5.156740104555639,
+      "bytes_per_token": 1.0
+    }
+  },
+  "key_findings": {
+    "artificial_vocab_size": 874,
+    "artificial_vs_bpe5k_vocab_reduction": 82.5,
+    "artificial_compression_tinystories": 0.5214272237568183,
+    "artificial_compression_wikitext": 0.7930809753978167,
+    "best_compression_method": "BPE-5K",
+    "artificial_better_than_byte": true,
+    "artificial_worse_than_bpe": true
+  }
+}
